@@ -6,7 +6,7 @@
 
 
 
-from setuptools import find_setup
+from setuptools import setup
 
 
 setup(

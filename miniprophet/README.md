@@ -7,6 +7,12 @@ MiniProphet modifies only two modules, "forecaster.py" and "models.py". As with 
 
 The documentation of Prophet carries over to miniprophet (except any references to MCMC sampling), and is available at  https://facebook.github.io/prophet/. The source code repository for Prophet is located at   https://github.com/facebook/prophet, from where built-in holidays, diagnostics tools and plotting tools can be added if desired.
 
+You can install miniprophet from the repo directly using
+
+
+`pip install git+https://github.com/bidianf/miniprophet.git#egg=miniprophet` 
+
+
 # Example usage
 
 ```python
@@ -19,4 +25,4 @@ The documentation of Prophet carries over to miniprophet (except any references 
   >>> future = m.make_future_dataframe(periods=365)
   >>> df2 = m.predict(future)
   >>> df2.head()
-
+```
